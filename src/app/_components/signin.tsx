@@ -22,14 +22,19 @@ export default function SignIn() {
           <PopoverTrigger>
             <User
               avatarProps={{
-                src: session.data.user.image ?? undefined,
+                src: session.data?.user?.image ?? undefined,
               }}
-              description={session.data.user.email}
-              name={session.data.user.name}
+              description={session.data?.user?.email}
+              name={session.data?.user?.name}
             />
           </PopoverTrigger>
           <PopoverContent className="p-4">
-            <Button color="danger" variant="solid" className="min-w-32" onPress={() => signOut()}>
+            <Button
+              color="danger"
+              variant="solid"
+              className="min-w-32"
+              onPress={() => signOut()}
+            >
               Sign Out
             </Button>
           </PopoverContent>
