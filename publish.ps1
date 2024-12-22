@@ -13,4 +13,4 @@ docker build -t "cr.yandex/crpeugjfqfe9uvge0bip/driver-next:${Version}" .
 Write-Host ""
 Write-Host "Push image..." -ForegroundColor DarkGreen
 Write-Host ""
-docker push "cr.yandex/crpeugjfqfe9uvge0bip/driver-next:${Version}" .
+docker push "cr.yandex/crpeugjfqfe9uvge0bip/driver-next:${Version}"
