@@ -18,6 +18,7 @@ export const metadata: Metadata = {
 const anta = Anta({
   weight: "400",
   variable: "--font-anta",
+  subsets: ["latin", "latin-ext", "math", "symbols"],
 });
 
 export default async function RootLayout({
